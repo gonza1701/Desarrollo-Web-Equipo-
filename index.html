@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desarrollo de Aplicaciones Web</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app">
+        <canvas id="floatingLinesCanvas"></canvas>
+
+        <header class="app-header">
+            <div class="header-content">
+                <h1>Desarrollo de Aplicaciones Web</h1>
+                <a href="https://secreacademica.cs.buap.mx/" target="_blank"> <img class="img-header" src="/public/img/logos/fcc_logo.png" alt="Logo"></a>
+            </div>
+        </header>
+
+        <div class="infinite-carousel">
+            <div class="carousel-track" id="carouselTrack">
+            </div>
+        </div>
+
+        <div class="content-wrapper">
+            <div class="chroma-grid" id="chromaGrid">
+            </div>
+
+            <div class="bottom-actions">
+                <button class="welcome-btn" id="btnBienvenida">Texto de bienvenida</button>
+            </div>
+        </div>
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <button class="close" id="closeModal" aria-label="Cerrar modal">&times;</button>
+                <div class="modal-image-container">
+                    <img id="modalImage" src="" alt="" class="modal-image" style="display:none;">
+                    <svg id="modalDefaultIcon" class="modal-default-profile" viewBox="0 0 24 24" width="80" height="80" style="display:none;">
+                        <path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/>
+                    </svg>
+                </div>
+                <h2 id="modalTitulo"></h2>
+                <p id="modalTexto"></p>
+                <div id="modalLenguajes" style="display:none;">
+                    <div id="techTabs">
+                    </div>
+                </div>
+                <div id="modalRedes" class="redes modal-socials">
+                </div>
+            </div>
+        </div>
+        <div id="toastContainer" class="toast-container"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script type="module">
+      import LiquidBackground from 'https://cdn.jsdelivr.net/npm/threejs-components@0.0.27/build/backgrounds/liquid1.min.js';
+      window.addEventListener('load', () => {
+        window.LiquidBackground = LiquidBackground;
+        window.initLiquidFromHTML?.();
+      });
+    </script>
+    <script src="main.js"></script>
+</body>
+</html>
