@@ -87,10 +87,11 @@ const teamMembers = [
   },
   {
     id: 5,
-    nombre: 'Carlo',
-    info: 'Integrante del equipo',
+    nombre: 'Carlo Oswaldo Lopez Rojas',
+    info: 'Estudiante de desarrollo web',
      lenguajes: [
       'Lenguajes de Programación',
+      'Java', 'C++', 'Python',
 
       'Bases de Datos',
       
@@ -100,8 +101,8 @@ const teamMembers = [
      
     ],
     facebook: '',
-    instagram: '',
-    github: '',
+    instagram: 'https://www.instagram.com/carlo_rojz/',
+    github: 'https://github.com/car-roj',
     linkedin: '',
     imagen: null
   }
