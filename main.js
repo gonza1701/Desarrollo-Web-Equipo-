@@ -71,29 +71,28 @@ const teamMembers = [
   {
     id: 4,
     nombre: 'Gonzalo Montiel Santos',
-    info: 'Integrante del equipo',
+    info: 'Estudiante de Desarrollo Web',
      lenguajes: [
       'Lenguajes de Programación',
+      'Python',
+      'C',
+      'JavaScript'
 
-      'Bases de Datos',
-      
-      'Entornos y Dependencias',
-     
-      'Maquetación y Diseño Web',
-     
+    
     ],
     facebook: '',
-    instagram: '',
-    github: '',
+    instagram: 'https://www.instagram.com/gonza_2508/',
+    github: 'https://github.com/gonza1701',
     linkedin: '',
     imagen: null
   },
   {
     id: 5,
-    nombre: 'Carlo',
-    info: 'Integrante del equipo',
+    nombre: 'Carlo Oswaldo Lopez Rojas',
+    info: 'Estudiante de desarrollo web',
      lenguajes: [
       'Lenguajes de Programación',
+      'Java', 'C++', 'Python',
 
       'Bases de Datos',
       
@@ -103,8 +102,8 @@ const teamMembers = [
      
     ],
     facebook: '',
-    instagram: '',
-    github: '',
+    instagram: 'https://www.instagram.com/carlo_rojz/',
+    github: 'https://github.com/car-roj',
     linkedin: '',
     imagen: null
   }
