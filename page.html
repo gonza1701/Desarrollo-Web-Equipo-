@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desarrollo de Aplicaciones Web</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Favicon -->
+    <link rel="icon" href="public/favicon.svg" type="image/svg+xml">
+    <link rel="shortcut icon" href="public/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+    <div class="app" id="appContainer">
+        <canvas id="floatingLinesCanvas"></canvas>
+
+        <header class="app-header">
+            <div class="header-content">
+                <h1 id="title">Desarrollo de Aplicaciones Web</h1>
+                <a href="https://secreacademica.cs.buap.mx/" target="_blank"> <img class="img-header" src="public/img/logos/fcc_logo.png" alt="Logo"></a>
+                <div class="header-actions" id="headerActions"></div>
+            </div>
+        </header>
+
+        <div class="infinite-carousel">
+            <div class="carousel-track" id="carouselTrack">
+            </div>
+        </div>
+
+        <div class="content-wrapper">
+            <div class="chroma-grid" id="chromaGrid">
+            </div>
+
+            <div class="bottom-actions">
+                <button class="welcome-btn" id="btnBienvenida">Texto de bienvenida</button>
+            </div>
+                </div>
+
+                <!-- Secciones adicionales debajo de las tarjetas -->
+                <section class="section" id="galeria">
+                    <h2>Galería de Desarrollo Web</h2>
+                    <p>Recursos visuales y referencias. Vuelve al <a href="#title">título</a>.</p>
+                    <div class="masonry">
+                        <div class="masonry-item"><img src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=800&auto=format&fit=crop" alt="Código en editor" loading="lazy"></div>
+                        <div class="masonry-item"><img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?q=80&w=800&auto=format&fit=crop" alt="Laptop y frontend" loading="lazy"></div>
+                        <div class="masonry-item"><img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800&auto=format&fit=crop" alt="Backend server" loading="lazy"></div>
+                        <div class="masonry-item"><img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=800&auto=format&fit=crop" alt="Diseño responsivo" loading="lazy"></div>
+                        <div class="masonry-item"><img src="https://images.unsplash.com/photo-1517433456452-f9633a875f6f?q=80&w=800&auto=format&fit=crop" alt="Arquitectura web" loading="lazy"></div>
+                        <div class="masonry-item"><img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?q=80&w=800&auto=format&fit=crop" alt="Equipo de desarrollo" loading="lazy"></div>
+                        <div class="masonry-item"><img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=800&auto=format&fit=crop" alt="Código y depuración" loading="lazy"></div>
+                        <div class="masonry-item"><img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=800&auto=format&fit=crop" alt="Programación en laptop" loading="lazy"></div>
+                        <div class="masonry-item"><img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=800&auto=format&fit=crop" alt="Analítica y datos" loading="lazy"></div>
+                        <div class="masonry-item"><img src="https://images.unsplash.com/photo-1556157382-97eda2d62296?q=80&w=800&auto=format&fit=crop" alt="Setup de escritorio" loading="lazy"></div>
+                        <div class="masonry-item"><img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop" alt="Colaboración remota" loading="lazy"></div>
+                        <div class="masonry-item"><img src="https://images.unsplash.com/photo-1510511459019-5dda7724fd87?q=80&w=800&auto=format&fit=crop" alt="Dispositivos móviles" loading="lazy"></div>
+                        <div class="masonry-item"><img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=800&auto=format&fit=crop" alt="Presentación" loading="lazy"></div>
+                        <div class="masonry-item"><img src="https://images.unsplash.com/photo-1454165205744-3b78555e5572?q=80&w=800&auto=format&fit=crop" alt="Notas y diseño" loading="lazy"></div>
+                        <div class="masonry-item"><img src="https://images.unsplash.com/photo-1518773553398-650c184e0bb3?q=80&w=800&auto=format&fit=crop" alt="Servidores" loading="lazy"></div>
+                    </div>
+                </section>
+
+                <section class="section" id="listas">
+                    <h2>Listas y Enlaces</h2>
+                    <p>Visita la <a href="#galeria">galería</a> o regresa al <a href="#title">título</a>.</p>
+                    <div class="lists-wrapper">
+                        <div>
+                            <h3>Lista ordenada (pasos)</h3>
+                            <ol>
+                                <li>Planear arquitectura</li>
+                                <li>Maquetar HTML semántico</li>
+                                <li>Aplicar estilos CSS</li>
+                                <li>Agregar interactividad con JavaScript</li>
+                            </ol>
+                        </div>
+                        <div>
+                            <h3>Lista desordenada (conceptos)</h3>
+                            <ul>
+                                <li>Accesibilidad</li>
+                                <li>Performance</li>
+                                <li>SEO</li>
+                                <li>Seguridad</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3>Lista de definiciones</h3>
+                            <dl>
+                                <dt>HTML</dt>
+                                <dd>Estructura semántica de la web.</dd>
+                                <dt>CSS</dt>
+                                <dd>Presentación y estilos visuales.</dd>
+                                <dt>JavaScript</dt>
+                                <dd>Interactividad y lógica de cliente.</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section" id="tabla">
+                    <h2>Tabla de Recursos</h2>
+                    <table class="minimal-table">
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Tipo</th>
+                                <th>Enlace</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>MDN Web Docs</td>
+                                <td>Documentación</td>
+                                <td><a href="https://developer.mozilla.org" target="_blank" rel="noopener noreferrer">Abrir</a></td>
+                            </tr>
+                            <tr>
+                                <td>W3C</td>
+                                <td>Estándares</td>
+                                <td><a href="https://www.w3.org" target="_blank" rel="noopener noreferrer">Abrir</a></td>
+                            </tr>
+                            <tr>
+                                <td>Guía Interna</td>
+                                <td>Documento</td>
+                                <td><a href="#title">Ir al título</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <section class="section" id="videos">
+                    <h2>Videos</h2>
+                    <p>Embed que carga el reproductor al hacer click.</p>
+                    <div class="video-grid">
+                        <div class="lite-yt" data-ytid="DccTNyF0svY" aria-label="YouTube"></div>
+                        <div class="lite-yt" data-ytid="TdITcVD64zI" aria-label="YouTube"></div>
+                        <div class="lite-yt" data-ytid="s43aiz5aNRQ" aria-label="YouTube"></div>
+                        <div class="lite-yt" data-ytid="x2vY7gLzeCY" aria-label="YouTube"></div>
+                        <div class="lite-yt" data-ytid="ZDvxqqSoyZs" aria-label="YouTube"></div>
+                        <div class="lite-yt" data-ytid="V_ehc-REW1s" aria-label="YouTube"></div>
+                        <div class="lite-yt" data-ytid="mIaRui3Oxi0" aria-label="YouTube"></div>
+                        <div class="lite-yt" data-ytid="oR_0QuYo6hU" aria-label="YouTube"></div>
+                        <div class="lite-yt" data-ytid="L1oMLsiMusQ" aria-label="YouTube"></div>
+                        <div class="lite-yt" data-ytid="zytPXIMuvHs" aria-label="YouTube"></div>
+                    </div>
+                </section>
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <button class="close" id="closeModal" aria-label="Cerrar modal">&times;</button>
+                <div class="modal-image-container">
+                    <img id="modalImage" src="" alt="" class="modal-image" style="display:none;">
+                    <svg id="modalDefaultIcon" class="modal-default-profile" viewBox="0 0 24 24" width="80" height="80" style="display:none;">
+                        <path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/>
+                    </svg>
+                </div>
+                <h2 id="modalTitulo"></h2>
+                <p id="modalTexto"></p>
+                <div id="modalLenguajes" style="display:none;">
+                    <div id="techTabs">
+                    </div>
+                </div>
+                <div id="modalRedes" class="redes modal-socials">
+                </div>
+            </div>
+        </div>
+
+        <div id="loginModal" class="auth-modal" style="display: none;">
+            <div class="auth-modal-content">
+                <div class="auth-modal-header">
+                    <h2>Acceso al Sistema</h2>
+                </div>
+                <form id="loginForm" class="auth-form">
+                    <div class="form-group">
+                        <label for="loginEmail">Correo:</label>
+                        <input type="email" id="loginEmail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="loginPassword">Contraseña:</label>
+                        <input type="password" id="loginPassword" required>
+                    </div>
+                    <button type="submit" class="auth-btn">Ingresar</button>
+                    <p class="auth-error" id="loginError" style="display: none;"></p>
+                    <div class="auth-divider">o</div>
+                    <button type="button" id="btnCrearCuenta" class="auth-btn-secondary">Crear Cuenta</button>
+                </form>
+            </div>
+        </div>
+
+        <div id="crudPanel" class="crud-panel" style="display: none;">
+            <div class="crud-header">
+                <h2>Panel de Administración</h2>
+                <button id="closeCrudBtn" class="crud-close">×</button>
+            </div>
+            <div class="crud-content">
+                <div class="crud-tabs">
+                    <button class="crud-tab active" data-tab="miembros">Miembros</button>
+                    <button class="crud-tab" data-tab="usuarios">Usuarios</button>
+                </div>
+
+                <div id="miembrosTab" class="crud-tab-content active">
+                    <div class="crud-actions">
+                        <button id="btnAddMiembro" class="crud-action-btn">+ Nuevo Miembro</button>
+                    </div>
+                    <div id="miembrosList" class="crud-list"></div>
+                </div>
+
+                <div id="usuariosTab" class="crud-tab-content">
+                    <div class="crud-actions">
+                        <button id="btnAddUser" class="crud-action-btn">+ Nuevo Usuario</button>
+                    </div>
+                    <div id="usuariosList" class="crud-list"></div>
+                </div>
+            </div>
+
+            <div id="formPanel" class="crud-form-panel" style="display: none;">
+                <div class="form-header">
+                    <h3 id="formTitle"></h3>
+                    <button id="closeFormBtn" class="form-close">×</button>
+                </div>
+                <form id="crudForm" class="crud-form"></form>
+            </div>
+        </div>
+
+        <!-- Video Modal Overlay -->
+        <div id="videoModalOverlay" class="video-modal-overlay">
+            <div class="video-modal-container">
+                <button class="video-modal-close" id="videoModalClose">×</button>
+                <div id="videoEmbedContainer"></div>
+            </div>
+        </div>
+
+        <div id="toastContainer" class="toast-container"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="config.js"></script>
+    <script src="auth.js"></script>
+    <script src="crud.js"></script>
+    <script type="module">
+      import LiquidBackground from 'https://cdn.jsdelivr.net/npm/threejs-components@0.0.27/build/backgrounds/liquid1.min.js';
+      window.addEventListener('load', () => {
+        window.LiquidBackground = LiquidBackground;
+        window.initLiquidFromHTML?.();
+      });
+    </script>
+    <script src="main.js"></script>
+</body>
+</html>
