@@ -49,17 +49,18 @@ const teamMembers = [
   },
   {
     id: 3,
-    nombre: 'Angel Desiderio Hernandez Sanchez',
+    nombre: 'Angel Desiderio Hernández Sánchez',
     info: 'Integrante del equipo',
     lenguajes: [
       'Lenguajes de Programación',
-
+      'c++',
+      'Java',
+      'Python',
       'Bases de Datos',
-      
-      'Entornos y Dependencias',
-     
+      'MySQL',
       'Maquetación y Diseño Web',
-     
+      'HTML',
+      'CSS',
     ],
     facebook: '',
     instagram: '',
